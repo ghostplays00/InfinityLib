@@ -15,10 +15,10 @@ import lombok.RequiredArgsConstructor;
 public final class CoolDowns {
 
     private final Map<UUID, Long> map = new HashMap<>();
-    private final long cd;
+    private final long cooldown;
 
     public boolean check(UUID uuid) {
-        return System.currentTimeMillis() - map.getOrDefault(uuid, 0L) >= cd;
+        return System.currentTimeMillis() - map.getOrDefault(uuid, 0L) >= cooldown;
     }
 
     public void reset(UUID uuid) {

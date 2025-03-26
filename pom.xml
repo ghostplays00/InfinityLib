@@ -35,9 +35,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.Slimefun</groupId>
+            <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-28</version>
+            <version>3ea21da4fe</version>
             <scope>provided</scope>
         </dependency>
 
